@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # script to enable hibernation noninteractively, based on powerdown-functions
+yay -S mkinitcpio update-grub --noconfirm
 shopt -s nullglob extglob
 
 swapfilesize=${1-16G}
