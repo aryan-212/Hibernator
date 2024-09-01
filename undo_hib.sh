@@ -2,7 +2,7 @@
 # Script to undo hibernation setup noninteractively
 
 shopt -s nullglob extglob
-
+sudo pacman -S mkinitcpio
 lock() {
     local LOCK=/tmp/hibernator.lock
     if ! mkdir "$LOCK" 2> /dev/null; then
